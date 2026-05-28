@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F0F0F,50:1E293B,100:0F172A&height=220&section=header&text=Admin%20Dashboard&fontSize=75&fontColor=ffffff&fontAlignY=38&desc=Enterprise-Grade%20Analytics%20%26%20Management%20Platform&descSize=20&descAlignY=58&descColor=cbd5e1" width="100%"/>
 
-First, run the development server:
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<div align="center">
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[![Live Demo](https://img.shields.io/badge/📊%20Live%20Demo-Visit%20Now-3b82f6?style=for-the-badge)](https://dashboard-three.vercel.app/) <!-- 🔗 حط رابط فيرسيل اللايف الجديد بتاعك هنا -->
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Source%20Code-181717?style=for-the-badge&logo=github)](https://github.com/Fady519/Dashboard)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Fady%20Kaiser-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fady-kaiser/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+</div>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+<div align="center">
 
-To learn more about Next.js, take a look at the following resources:
+## 📈 Streamlined Analytics. Interactive Scheduling. Flawless UX.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+An enterprise-grade commercial dashboard built with **Next.js** and **TypeScript**.  
+Advanced data visualization. Responsive calendars. Session persistence. Anti-flicker dark mode. All optimized for speed.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+</div>
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🖥️ Live Preview
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<div align="center">
+
+> 🔗 **[dashboard-three.vercel.app](https://dashboard-three.vercel.app/)** <!-- 🔗 حط رابط فيرسيل اللايف الجديد بتاعك هنا -->
+
+> _Add a screenshot or GIF here_
+
+</div>
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---|---|
+| 📊 **Advanced Analytics** | Interactive data visualization with Line, Bar, and Pie charts via Recharts |
+| 📅 **Interactive Scheduler** | Fully functional calendar powered by FullCalendar with past-date booking validation |
+| 🔐 **Route Protection** | Secure client-side routing with session-based authentication guards |
+| 🌓 **Dynamic Theme Engine** | Seamless light/dark mode integration optimized to eliminate SSR hydration flickering |
+| 💾 **Persistent Session Data** | State persistence across refreshes utilizing localStorage and sessionStorage |
+| 📋 **Enterprise Modules** | Roster lists for team management, interactive invoices, and dynamic profile forms |
+| 🌍 **Geography Visualization** | High-quality geographic data and distribution mapping |
+| 📱 **Flawless Responsiveness** | Tailored with custom Tailwind CSS utilities for zero layout shifts (CLS) on mobile |
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+![Next.js](https://img.shields.io/badge/Next.js%2014-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![FullCalendar](https://img.shields.io/badge/FullCalendar-2563EB?style=for-the-badge&logo=calendar&logoColor=white)
+![Recharts](https://img.shields.io/badge/Recharts-22C55E?style=for-the-badge&logo=chart&logoColor=white)
+![Lucide Icons](https://img.shields.io/badge/Lucide%20Icons-F43F5E?style=for-the-badge)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+</div>
+
+---
+
+## 🔐 Authentication & Route Management
