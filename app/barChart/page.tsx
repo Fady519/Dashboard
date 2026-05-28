@@ -16,7 +16,7 @@ const salesData = [
 export default function BarChartPage() {
   return (
     <div className="space-y-6">
-   
+
       <div>
         <h1 className="text-2xl font-bold text-slate-900 dark:text-slate-50 tracking-tight flex items-center gap-2">
           <BarChart3 className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
@@ -27,69 +27,71 @@ export default function BarChartPage() {
         </p>
       </div>
 
-      
+
       <div className="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900">
         <div className="mb-4">
           <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">Monthly Overview</h2>
           <p className="text-xs text-slate-400 dark:text-slate-500">Data reflects the first half of the fiscal year.</p>
         </div>
 
-     
+
         <div className="h-[400px] w-full">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart
               data={salesData}
               margin={{ top: 20, right: 30, left: 0, bottom: 5 }}
             >
-             
+
               <CartesianGrid strokeDasharray="3 3" className="stroke-slate-200 dark:stroke-slate-800" />
-              
-             
-              <XAxis 
-                dataKey="month" 
+
+
+              <XAxis
+                dataKey="month"
                 tick={{ fill: "currentColor" }}
                 className="text-xs font-medium text-slate-400 dark:text-slate-500"
                 tickLine={false}
               />
-              
-              
-              <YAxis 
+
+
+              <YAxis
                 tick={{ fill: "currentColor" }}
                 className="text-xs font-medium text-slate-400 dark:text-slate-500"
                 tickLine={false}
                 axisLine={false}
               />
-              
-              
+
+
               <Tooltip
                 contentStyle={{
-                  backgroundColor: "var(--tooltip-bg, #ffffff)",
-                  borderColor: "var(--tooltip-border, #e2e8f0)",
+                  backgroundColor: "rgba(30, 41, 59, 0.95)",
+                  borderColor: "#334155",
                   borderRadius: "12px",
                   boxShadow: "0 4px 6px -1px rgb(0 0 0 / 0.1)",
                 }}
-                className="dark:[--tooltip-bg:#1e293b] dark:[--tooltip-border:#334155]"
-                itemStyle={{ fontSize: "14px" }}
+                itemStyle={{
+                  fontSize: "14px",
+                  color: "#f8fafc"
+                }}
               />
-              
-          
-              <Legend 
-                wrapperStyle={{ paddingTop: "20px", fontSize: "14px" }} 
+
+
+              <Legend
+                wrapperStyle={{ paddingTop: "20px", fontSize: "14px" }}
               />
-              
-            
-              <Bar 
-                dataKey="Sales" 
-                fill="#4f46e5" 
-                radius={[4, 4, 0, 0]} 
+
+
+              <Bar
+                dataKey="Sales"
+                fill="#4f46e5"
+                radius={[4, 4, 0, 0]}
                 maxBarSize={50}
               />
-              
-              
-              <Bar 
-                dataKey="Revenue" 
-                fill="#10b981" 
-                radius={[4, 4, 0, 0]} 
+
+
+              <Bar
+                dataKey="Revenue"
+                fill="#10b981"
+                radius={[4, 4, 0, 0]}
                 maxBarSize={50}
               />
             </BarChart>
