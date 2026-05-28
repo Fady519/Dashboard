@@ -15,7 +15,6 @@ import {
 } from "recharts";
 import { TrendingUp, PieChart as PieIcon } from "lucide-react";
 
-
 const growthData = [
   { month: "Jan", Users: 1200, Bookings: 800 },
   { month: "Feb", Users: 1900, Bookings: 1200 },
@@ -25,14 +24,12 @@ const growthData = [
   { month: "Jun", Users: 7000, Bookings: 5800 },
 ];
 
-
 const serviceData = [
   { name: "Consultations", value: 400 },
   { name: "Reservations", value: 300 },
   { name: "Support Tickets", value: 200 },
   { name: "Other Services", value: 100 },
 ];
-
 
 const COLORS = ["#6366f1", "#10b981", "#f59e0b", "#ef4444"];
 
@@ -50,10 +47,9 @@ export default function ChartsPage() {
         </p>
       </div>
 
-     
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        
-        
+
+        {/* الـ Line Chart */}
         <div className="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900">
           <div className="mb-4">
             <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100 flex items-center gap-2">
@@ -68,25 +64,30 @@ export default function ChartsPage() {
                 <CartesianGrid strokeDasharray="3 3" className="stroke-slate-200 dark:stroke-slate-800" />
                 <XAxis dataKey="month" className="text-xs text-slate-400 dark:text-slate-500" tickLine={false} />
                 <YAxis className="text-xs text-slate-400 dark:text-slate-500" tickLine={false} axisLine={false} />
+                
+               
                 <Tooltip
                   contentStyle={{
-                    backgroundColor: "var(--tooltip-bg, #ffffff)",
-                    borderColor: "var(--tooltip-border, #e2e8f0)",
+                    backgroundColor: "rgba(30, 41, 59, 0.95)", 
+                    borderColor: "#334155",
                     borderRadius: "12px",
+                    boxShadow: "0 4px 6px -1px rgb(0 0 0 / 0.1)",
                   }}
-                  className="dark:[--tooltip-bg:#1e293b] dark:[--tooltip-border:#334155]"
+                  itemStyle={{
+                    fontSize: "14px",
+                    color: "#f8fafc"
+                  }}
                 />
+                
                 <Legend wrapperStyle={{ paddingTop: "15px", fontSize: "13px" }} />
-               
                 <Line type="monotone" dataKey="Users" stroke="#4f46e5" strokeWidth={3} dot={{ r: 4 }} activeDot={{ r: 6 }} />
-               
                 <Line type="monotone" dataKey="Bookings" stroke="#10b981" strokeWidth={3} dot={{ r: 4 }} activeDot={{ r: 6 }} />
               </LineChart>
             </ResponsiveContainer>
           </div>
         </div>
 
-        
+        {/* الـ Pie Chart */}
         <div className="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900">
           <div className="mb-4">
             <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100 flex items-center gap-2">
@@ -103,24 +104,26 @@ export default function ChartsPage() {
                   data={serviceData}
                   cx="50%"
                   cy="45%"
-                  innerRadius={60} 
+                  innerRadius={60}
                   outerRadius={90}
                   paddingAngle={5}
                   dataKey="value"
                 >
-                  
                   {serviceData.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                   ))}
                 </Pie>
+                
                 <Tooltip
                   contentStyle={{
-                    backgroundColor: "var(--tooltip-bg, #ffffff)",
-                    borderColor: "var(--tooltip-border, #e2e8f0)",
+                    backgroundColor: "rgba(30, 41, 59, 0.95)",
+                    borderColor: "#334155",
                     borderRadius: "12px",
+                    boxShadow: "0 4px 6px -1px rgb(0 0 0 / 0.1)",
                   }}
-                  className="dark:[--tooltip-bg:#1e293b] dark:[--tooltip-border:#334155]"
+                  itemStyle={{ fontSize: "14px", color: "#f8fafc" }}
                 />
+                
                 <Legend verticalAlign="bottom" height={36} wrapperStyle={{ fontSize: "13px" }} />
               </PieChart>
             </ResponsiveContainer>
