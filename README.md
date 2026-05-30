@@ -1,109 +1,136 @@
 <div align="center">
 
-# 🖥️ Advanced Admin Dashboard
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,50:8B5CF6,100:A855F7&height=220&section=header&text=Admin%20Dashboard&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=Fady%20Kaiser%20%E2%80%94%20Next.js%2014%20%7C%20TypeScript%20%7C%20Tailwind%20CSS&descSize=20&descAlignY=58&descColor=ffffff" width="100%"/>
 
-### A full-featured, responsive admin panel built with Next.js 14, TypeScript, and Tailwind CSS
+</div>
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Available-22c55e?style=for-the-badge)](https://dashboard-flax-two-20.vercel.app/login)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/Fady519/Dashboard)
-[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
-[![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel)](https://vercel.com/)
+<div align="center">
+
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Now-6366F1?style=for-the-badge)](https://dashboard-flax-two-20.vercel.app/login)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Source%20Code-181717?style=for-the-badge&logo=github)](https://github.com/Fady519/Dashboard)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Fady%20Kaiser-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fady-kaiser/)
 
 </div>
 
 ---
 
-## 📌 Overview
+<div align="center">
 
-**Advanced Admin Dashboard** is a production-ready, mobile-first admin panel that demonstrates modern full stack frontend engineering skills. Built with **Next.js 14 App Router**, **TypeScript**, and **Tailwind CSS**, the dashboard features a complete authentication flow, dynamic theming, interactive scheduling, and multiple analytics and management modules — all in a clean, fully responsive layout.
+## 🖥️ A full-featured, mobile-first Admin Dashboard.
 
-> 🔐 **Demo Credentials:** Email: `admin@admin.com` &nbsp;|&nbsp; Password: `admin`
+RBAC Authentication. Dark / Light Mode. Interactive Calendar. Analytics Modules.  
+Built with Next.js 14 App Router. Designed for real-world admin workflows.
+
+</div>
+
+---
+
+## 🌐 Live Preview
+
+<div align="center">
+
+> 🔗 **[dashboard-flax-two-20.vercel.app](https://dashboard-flax-two-20.vercel.app/login)**
+
+> 🔐 **Demo credentials:** `admin@admin.com` / `admin`
+
+> _Add a screenshot or GIF here_
+
+</div>
 
 ---
 
 ## ✨ Features
 
-### 🔐 Authentication & Access Control
-- Session-based login with protected route guards
-- Role-based access control (RBAC) using `localStorage` and `sessionStorage`
-- Automatic redirect to login on unauthorized access
-- Session persistence across page refreshes
-
-### 🌗 Dynamic Theming
-- Full dark / light mode toggle with system preference detection
-- Theme persisted in `localStorage` — no flickering on reload
-- Hydration-safe implementation preventing layout shifts (no FOUC)
-
-### 📅 Interactive Scheduling
-- Integrated **FullCalendar** with drag-and-drop event management
-- Date validation logic blocking bookings on past dates
-- Calendar state persisted in `sessionStorage` across navigation
-
-### 📊 Analytics & Management Modules
-
-| Module | Description |
+| Feature | Description |
 |---|---|
-| 📈 **Overview Charts** | Revenue, traffic, and performance visualizations |
-| 🧾 **Invoices** | Filterable invoice table with status tracking |
-| 👥 **Team Management** | Member list with role and status indicators |
-| 📝 **Forms** | Validated forms with real-time error feedback |
-| 🗺️ **Geography** | Interactive country-level data visualization |
-| 📅 **Calendar** | Event scheduling with FullCalendar integration |
+| 🔐 **Auth & RBAC** | Session-based login with role-based protected routes |
+| 🌗 **Dark / Light Mode** | Hydration-safe theme toggle — no flash on reload |
+| 📅 **Interactive Calendar** | FullCalendar with date validation & session-persisted state |
+| 📊 **Analytics Charts** | Revenue, traffic, and KPI visualizations |
+| 🧾 **Invoice Management** | Filterable table with status tracking |
+| 👥 **Team Management** | Member list with roles and status indicators |
+| 🗺️ **Geography Module** | Country-level interactive data visualization |
+| 📝 **Validated Forms** | Real-time form validation with inline error feedback |
+| 📱 **Fully Responsive** | Mobile-first layout with collapsible sidebar across all screen sizes |
 
-### 📱 Responsive Design
-- Mobile-first layout with collapsible sidebar
-- Fully responsive across all screen sizes (mobile, tablet, desktop)
-- Consistent UI behavior on all major browsers
+---
+
+## ⚡ Technical Highlights
+
+```
+✦ Next.js 14 App Router  → file-based routing with layout-level route guards
+✦ Hydration-safe theming → inline script in <head> prevents FOUC on SSR
+✦ No backend required    → auth & calendar state via localStorage / sessionStorage
+✦ TypeScript throughout  → fully typed components, hooks, and utilities
+✦ RBAC route protection  → unauthenticated users redirected before render
+```
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Category | Technology |
-|---|---|
-| **Framework** | Next.js 14 (App Router) |
-| **Language** | TypeScript |
-| **Styling** | Tailwind CSS |
-| **Scheduling** | FullCalendar |
-| **Notifications** | React Hot Toast |
-| **State** | localStorage / sessionStorage |
-| **Deployment** | Vercel |
+<div align="center">
+
+![Next.js](https://img.shields.io/badge/Next.js%2014-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![FullCalendar](https://img.shields.io/badge/FullCalendar-4285F4?style=for-the-badge&logo=googlecalendar&logoColor=white)
+![React Hot Toast](https://img.shields.io/badge/React%20Hot%20Toast-FF4154?style=for-the-badge&logo=react&logoColor=white)
+![Vercel](https://img.shields.io/badge/Deployed%20on%20Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+</div>
 
 ---
 
-## 🗂️ Project Structure
+## 🗂️ Dashboard Modules
+
+```
+📊 Overview        → Charts, KPIs, and summary stats
+🧾 Invoices        → Table view with filter and status tracking
+👥 Team            → Member management with role indicators
+📝 Form            → Multi-field validated forms
+🗺️ Geography       → Country-level data visualization
+📅 Calendar        → FullCalendar scheduling with date validation
+```
+
+---
+
+## 📁 Project Structure
 
 ```
 Dashboard/
+│
 ├── app/
 │   ├── (auth)/
-│   │   └── login/          # Login page with auth logic
+│   │   └── login/              # Login page with session auth
 │   ├── (dashboard)/
-│   │   ├── layout.tsx       # Protected dashboard layout
-│   │   ├── page.tsx         # Overview / home
-│   │   ├── calendar/        # FullCalendar scheduling module
-│   │   ├── invoices/        # Invoice management table
-│   │   ├── team/            # Team member management
-│   │   ├── form/            # Validated forms module
-│   │   └── geography/       # Country data visualization
-│   └── layout.tsx           # Root layout with theme provider
+│   │   ├── layout.tsx           # Protected layout with route guard
+│   │   ├── page.tsx             # Overview / home
+│   │   ├── calendar/            # FullCalendar scheduling module
+│   │   ├── invoices/            # Invoice management table
+│   │   ├── team/                # Team member management
+│   │   ├── form/                # Validated forms module
+│   │   └── geography/           # Country data visualization
+│   └── layout.tsx               # Root layout with theme provider
+│
 ├── components/
-│   ├── Sidebar.tsx          # Collapsible responsive sidebar
-│   ├── Topbar.tsx           # Header with theme toggle
-│   ├── charts/              # Reusable chart components
-│   └── ui/                  # Shared UI components
+│   ├── Sidebar.tsx              # Collapsible responsive sidebar
+│   ├── Topbar.tsx               # Header with theme toggle
+│   ├── charts/                  # Reusable chart components
+│   └── ui/                      # Shared UI primitives
+│
 ├── hooks/
-│   └── useAuth.ts           # Session-based auth hook
+│   └── useAuth.ts               # Session-based auth hook
+│
 ├── lib/
-│   └── theme.ts             # Dark/light mode utilities
-└── types/                   # TypeScript type definitions
+│   └── theme.ts                 # Dark / light mode utilities
+│
+└── types/                       # Global TypeScript definitions
 ```
 
 ---
 
-## 🚀 Getting Started
+## ⚙️ Getting Started
 
 ### Prerequisites
 
@@ -115,93 +142,71 @@ Dashboard/
 ```bash
 # 1. Clone the repository
 git clone https://github.com/Fady519/Dashboard.git
-
-# 2. Navigate to the project directory
 cd Dashboard
 
-# 3. Install dependencies
+# 2. Install dependencies
 npm install
-# or
-yarn install
 
-# 4. Run the development server
+# 3. Start the development server
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000) and log in with:
 
-> **Login with:** `admin@admin.com` / `admin`
+```
+Email:    admin@admin.com
+Password: admin
+```
 
----
-
-## 🔑 Key Technical Decisions
-
-### ✅ Hydration-Safe Dark Mode
-The theme toggle is implemented to prevent the "flash of unstyled content" (FOUC) — a common issue with SSR apps. Theme is read before hydration using an inline script injected into `<head>`, ensuring the correct class is applied before React mounts.
-
-### ✅ Session Persistence Without a Backend
-All authentication state and calendar data are managed via `localStorage` and `sessionStorage`, demonstrating how to build stateful, persistent UX without a backend dependency.
-
-### ✅ Route Protection with Next.js App Router
-Protected routes are implemented using a layout-level auth check. Unauthenticated users are redirected to `/login` before any protected component renders.
-
-### ✅ TypeScript Throughout
-All components, hooks, and utilities are fully typed, making the codebase scalable and safe to extend.
-
----
-
-## 📸 Screenshots
-
-> 🔗 [View the live demo →](https://dashboard-flax-two-20.vercel.app/login)
-
-| Login Page | Dashboard Overview |
-|---|---|
-| Authentication with session guard | Charts, stats, and analytics |
-
-| Calendar | Team Management |
-|---|---|
-| FullCalendar with date validation | Member roles and status |
-
----
-
-## 🌐 Deployment
-
-This project is deployed on **Vercel** with zero-config Next.js support.
-
-To deploy your own instance:
+### Build & Deploy
 
 ```bash
 npm run build
-# or deploy directly via Vercel CLI
+# or deploy directly via Vercel
 vercel --prod
 ```
 
 ---
 
-## 📈 What I Learned
+## 🔑 Key Technical Decisions
 
-- Building **protected routing** with Next.js 14 App Router without an external auth library
-- Implementing **hydration-safe dark mode** in a server-rendered environment
-- Managing **persistent client-side state** using Web Storage APIs across route changes
-- Integrating **FullCalendar** in a TypeScript/Next.js project with custom validation logic
-- Structuring a scalable Next.js project with clear separation of concerns
+**Hydration-Safe Dark Mode**  
+The theme is injected via an inline `<script>` in `<head>` before React hydrates, completely eliminating the flash of unstyled content (FOUC) that affects most SSR dark-mode implementations.
+
+**Route Protection Without an Auth Library**  
+Protected routes are handled at the layout level using a custom `useAuth` hook that reads from `sessionStorage`. Unauthenticated users are redirected to `/login` before any protected component renders — no NextAuth, no third-party dependency.
+
+**Client-Side Persistence Without a Backend**  
+All authentication state and calendar data are stored in `localStorage` and `sessionStorage`, demonstrating how to build persistent, stateful UX in a frontend-only project.
 
 ---
 
-## 🤝 Connect
+## 📈 What I Learned
+
+- Implementing **protected routing** with Next.js 14 App Router at the layout level
+- Solving **SSR hydration mismatch** for dark mode in a server-rendered environment
+- Managing **persistent client-side state** across route changes with Web Storage APIs
+- Integrating **FullCalendar** in TypeScript with custom date validation
+- Structuring a scalable Next.js project with **clean separation of concerns**
+
+---
+
+## 📬 Contact
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Fady_Kaiser-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/fady-kaiser/)
-[![GitHub](https://img.shields.io/badge/GitHub-Fady519-181717?style=for-the-badge&logo=github)](https://github.com/Fady519)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-22c55e?style=for-the-badge&logo=vercel)](https://fady519.github.io/Portfolio-Fady/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Fady%20Kaiser-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fady-kaiser/)
+[![GitHub](https://img.shields.io/badge/GitHub-Fady519-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Fady519)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live%20Now-6366F1?style=for-the-badge)](https://fady519.github.io/Portfolio-Fady/)
 
 </div>
 
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by <a href="https://github.com/Fady519">Fady Kaiser</a> — 2025</sub>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,50:8B5CF6,100:A855F7&height=100&section=footer" width="100%"/>
+
+**⭐ Found it useful? Drop a star — it means a lot!**
+
 </div>
