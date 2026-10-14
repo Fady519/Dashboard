@@ -9,7 +9,7 @@
 [![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20Now-6366F1?style=for-the-badge&logo=vercel&logoColor=white)](https://dashboard-flax-two-20.vercel.app/login)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Source%20Code-181717?style=for-the-badge&logo=github)](https://github.com/Fady519/Dashboard)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Fady%20Kaiser-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fady-kaiser/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Now-8B5CF6?style=for-the-badge)](https://fady519.github.io/MyPortfolio2/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Now-8B5CF6?style=for-the-badge)](https://fady519.github.io/Portfolio-Fady/)
 
 </div>
 
@@ -198,7 +198,7 @@ npm run dev
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Fady%20Kaiser-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fady-kaiser/)
 [![GitHub](https://img.shields.io/badge/GitHub-Fady519-181717?style=for-the-badge&logo=github)](https://github.com/Fady519)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live%20Now-6366F1?style=for-the-badge)](https://fady519.github.io/MyPortfolio2/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live%20Now-6366F1?style=for-the-badge)](https://fady519.github.io/Portfolio-Fady/)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,50:8B5CF6,100:A855F7&height=100&section=footer" width="100%"/>
 
