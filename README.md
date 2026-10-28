@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,50:8B5CF6,100:A855F7&height=220&section=header&text=NexusPro%20Admin%20Dashboard&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=Next.js%2014%20App%20Router%20%7C%20TypeScript%20%7C%20Tailwind%20CSS%20%7C%20FullCalendar&descSize=16&descAlignY=58&descColor=e0e7ff" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,50:8B5CF6,100:A855F7&height=220&section=header&text=Admin%20Dashboard&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Next.js%2016%20%7C%20React%2019%20%7C%20TypeScript%20%7C%20Tailwind%20CSS%204&descSize=16&descAlignY=58&descColor=e0e7ff" width="100%"/>
 
 </div>
 
@@ -17,9 +17,12 @@
 
 <div align="center">
 
-## 🖥️ A production-ready commercial Admin Dashboard — not just static UI.
-**Next.js 14 App Router · TypeScript · Tailwind CSS · FullCalendar · Interactive Multi-Series Analytics · Hydration-Safe Dark/Light Mode · Session-Guarded RBAC**  
-Engineered for enterprise administration workflows, high-frequency analytical monitoring, and zero-flicker visual performance.
+## 🖥️ A frontend admin dashboard built with Next.js 16
+
+**Next.js 16 App Router · React 19 · TypeScript · Tailwind CSS 4 · Recharts · FullCalendar · React Hook Form + Zod · Dark / Light Mode**
+
+A practice project focused on the frontend: layouts, charts, forms, a calendar and a responsive shell.
+There is no backend: sample data comes from [DummyJSON](https://dummyjson.com) and from local arrays, and the login is a demo stored in the browser.
 
 </div>
 
@@ -30,21 +33,24 @@ Engineered for enterprise administration workflows, high-frequency analytical mo
 <div align="center">
 
 > 🔗 **Live URL:** [dashboard-flax-two-20.vercel.app](https://dashboard-flax-two-20.vercel.app/login)  
-> 🔐 **Demo Credentials:** `admin@admin.com` / `admin`
+> 🔐 **Demo account:** `admin@admin.com` / `admin` (or click **Use demo account** on the login page)
 
 </div>
 
-### 1. Executive Analytics Overview & KPI Cards
+### 1. Overview: KPI Cards & Revenue Chart
 ![Dashboard Overview](docs/screenshots/01_dashboard_overview.png)
 
-### 2. Interactive FullCalendar Resource Scheduler
+### 2. FullCalendar Scheduler
 ![Interactive Calendar](docs/screenshots/02_calendar.png)
 
-### 3. Filterable Invoices & Financial Tracking
+### 3. Invoices Table with Status Filter
 ![Invoices Management](docs/screenshots/03_invoices.png)
 
-### 4. Modern Glassmorphic Login & Route Guard
+### 4. Login Page
 ![Login Portal](docs/screenshots/04_login.png)
+
+### 5. Team List
+![Team Management](docs/screenshots/05_team_management.png)
 
 ---
 
@@ -52,46 +58,15 @@ Engineered for enterprise administration workflows, high-frequency analytical mo
 
 | Feature | Description |
 |---|---|
-| 🔐 **Auth & RBAC Route Protection** | Session-based login with layout-level route guards intercepting unauthenticated access before render |
-| 🌗 **Zero-Flicker Dark / Light Mode** | Anti-FOUC inline hydration script preventing theme layout flashes on initial page load |
-| 📅 **Interactive FullCalendar Suite** | Complete scheduling workflow with date validation, drag-and-drop, and session-persisted CRUD |
-| 📊 **Multi-Series Analytics Charts** | High-density visual metrics for Revenue, Traffic volume, Conversions, and Recent User Activities |
-| 🧾 **Invoices & Financial Management** | Filterable data table with payment status indicators (Paid, Pending, Overdue) and search |
-| 👥 **Team Roster & Role Management** | Real-time member list with access tier badges (`Admin`, `Manager`, `User`) |
-| 🗺️ **Geography Data Visualization** | Country-level choropleth visualization for global traffic distribution |
-| 📝 **Multi-Step Validated Forms** | User profile creation form with real-time input validation and feedback |
-| 📱 **Mobile-First Responsive Shell** | Collapsible sidebar, mobile drawer navigation, and fluid layouts across all device viewports |
-
----
-
-## ⚡ Technical Highlights & System Architecture
-
-```
-┌────────────────────────────────────────────────────────┐
-│                   Next.js 14 App Router                │
-│    Root Layout · Theme Provider · Toast Notifications  │
-└───────────────────────────┬────────────────────────────┘
-                            │
-┌───────────────────────────▼────────────────────────────┐
-│                 Client-Side Route Guard                │
-│    Session Validation · Redirects unauthenticated users│
-└───────────────────────────┬────────────────────────────┘
-                            │
-┌───────────────────────────▼────────────────────────────┐
-│                Modular Component Shell                 │
-│    Collapsible Sidebar · Responsive Topbar · Breadcrumbs│
-└───────────────────────────┬────────────────────────────┘
-                            │
-┌───────────────────────────▼────────────────────────────┐
-│               Interactive Feature Modules              │
-│    FullCalendar · Recharts / Nivo · Data Grids · Forms │
-└────────────────────────────────────────────────────────┘
-```
-
-* **Next.js 14 App Router:** Clean file-based routing architecture with layout-level state persistence.
-* **Hydration-Safe Theming:** Inline execution script in `<head>` resolves system/stored theme preference before DOM paint, eliminating flash of unstyled content (FOUC).
-* **Strict TypeScript Implementation:** 100% typed props, state interfaces, event handlers, and data models for zero runtime surprises.
-* **Component-Level Encapsulation:** High-performance charting and scheduling wrappers isolated from global re-renders.
+| 🔐 **Demo Login & Route Guard** | Register / login stored in the browser (`localStorage` + `sessionStorage`); the root layout redirects to `/login` when there is no session. This is a frontend demo, not real authentication |
+| 🌗 **Dark / Light Mode** | Theme saved in `localStorage` and applied by an inline script in `<head>` before the first paint, so the page does not flash the wrong theme |
+| 📅 **FullCalendar Scheduler** | Month / week / day views, click a date to add an event, drag and drop to move it, click to delete; events are saved in `localStorage` |
+| 📊 **Charts** | Area, bar, line and pie charts with Recharts, plus a daily / weekly / monthly switch on the overview chart |
+| 🧾 **Invoices** | Table built from DummyJSON users with a paid / pending filter |
+| 👥 **Team & Contacts** | Lists loaded from DummyJSON with search and a role filter (the roles are display badges) |
+| 🗺️ **Geography** | 3D globe (`react-globe.gl`) with sample country data; click a country to focus the camera on it |
+| 📝 **Validated Form** | Profile form built with React Hook Form and a Zod schema |
+| 📱 **Responsive Shell** | Collapsible sidebar, mobile drawer and layouts that work from phone to desktop |
 
 ---
 
@@ -99,37 +74,40 @@ Engineered for enterprise administration workflows, high-frequency analytical mo
 
 <div align="center">
 
-### Core Framework & Language
-![Next.js](https://img.shields.io/badge/Next.js%2014-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React%2018-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+### Framework & Language
+![Next.js](https://img.shields.io/badge/Next.js%2016-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React%2019-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
-### Styling & Animation
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+### Styling & UI
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS%204-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Lucide Icons](https://img.shields.io/badge/Lucide%20Icons-F56565?style=for-the-badge)
 ![React Hot Toast](https://img.shields.io/badge/React%20Hot%20Toast-FF4154?style=for-the-badge)
 
-### Visualization & Tooling
+### Charts, Calendar & Forms
+![Recharts](https://img.shields.io/badge/Recharts-22B5BF?style=for-the-badge)
 ![FullCalendar](https://img.shields.io/badge/FullCalendar-4285F4?style=for-the-badge&logo=googlecalendar&logoColor=white)
-![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
+![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-EC5990?style=for-the-badge&logo=reacthookform&logoColor=white)
+![Zod](https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Deployed%20on%20Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 </div>
 
 ---
 
-## 🗂️ Dashboard Modules Breakdown
+## 🗂️ Pages
 
 ```
-📊 1. Overview          → Total Revenue ($), Active Users, Orders, Conversion Rate & Charts
-👥 2. Manage Team       → Enterprise member directory with role indicators & access tiers
-📇 3. Contacts Info     → Comprehensive client address book with quick search & contact actions
-🧾 4. Invoices Balances → Financial ledger tracking invoice IDs, clients, amounts & payment status
-👤 5. Profile Form      → Multi-field employee onboarding form with structured validation
-📅 6. Calendar Suite    → FullCalendar interactive scheduler with event creation & CRUD
-📊 7. Bar & Pie Charts  → Categorical sales and demographic visual breakdown
-📈 8. Line Chart        → Temporal metric progression and trend forecasting
-🗺️ 9. Geography Chart   → Global user density mapping across continents
+📊 Overview      → KPI cards, revenue area chart (daily / weekly / monthly), recent activity
+👥 Team          → Team list from DummyJSON with search and role filter
+📇 Contacts      → Contact list from DummyJSON with search
+🧾 Invoices      → Invoices table with paid / pending filter
+📝 Form          → Profile form (React Hook Form + Zod)
+📅 Calendar      → FullCalendar with add / move / delete, saved in localStorage
+📊 Bar & Pie     → Sample sales and category charts
+📈 Line          → Sample weekly trend chart
+🗺️ Geography     → 3D globe with sample country data
+❓ FAQ           → Accordion page
 ```
 
 ---
@@ -139,27 +117,28 @@ Engineered for enterprise administration workflows, high-frequency analytical mo
 ```
 Dashboard/
 ├── app/
-│   ├── layout.tsx              # Root layout, theme injection, Toaster provider
-│   ├── page.tsx                # Main Executive Overview Dashboard
-│   ├── login/                  # Glassmorphic Login portal with auth guard
-│   ├── calendar/               # FullCalendar interactive scheduling view
-│   ├── team/                   # Team roster and member role management
-│   ├── contacts/               # Client address book and details
-│   ├── invoices/               # Financial invoices ledger
-│   ├── form/                   # Profile registration form
-│   ├── bar/                    # Bar chart data visualization
-│   ├── pie/                    # Pie chart demographic module
-│   ├── line/                   # Line chart trend analysis
-│   └── geography/              # Global geographic distribution map
+│   ├── layout.tsx         # Root layout: theme script, route guard, sidebar + topbar, toaster
+│   ├── page.tsx           # Overview
+│   ├── login/             # Login (with demo account)
+│   ├── register/          # Register (saved in localStorage)
+│   ├── calendar/          # FullCalendar scheduler
+│   ├── team/              # Team list
+│   ├── contacts/          # Contacts list
+│   ├── invoices/          # Invoices table
+│   ├── form/              # Profile form
+│   ├── barChart/          # Bar chart
+│   ├── pieCharts/         # Pie chart
+│   ├── lineChart/         # Line chart
+│   ├── geography/         # 3D globe
+│   └── faq/               # FAQ
 │
 ├── components/
-│   ├── Sidebar.tsx             # Collapsible, mobile-aware navigation shell
-│   ├── Topbar.tsx              # Search bar, notifications, dark/light toggle, user profile
-│   └── Header.tsx              # Standardized module header with subtitle
+│   ├── Sidebar.tsx        # Collapsible navigation, mobile drawer
+│   ├── Topbar.tsx         # Theme toggle, user menu, logout
+│   ├── StatCard.tsx       # KPI card
+│   └── RecentActivity.tsx # Activity list on the overview
 │
-├── docs/
-│   └── screenshots/            # High-resolution production screenshots
-└── public/                     # Static brand assets and icons
+└── docs/screenshots/      # README screenshots
 ```
 
 ---
@@ -167,7 +146,7 @@ Dashboard/
 ## 🚀 Getting Started
 
 ### Prerequisites
-- [Node.js (v18+) & npm](https://nodejs.org/)
+- [Node.js 20+ & npm](https://nodejs.org/)
 
 ### Installation & Local Run
 ```bash
@@ -178,19 +157,11 @@ cd Dashboard
 # 2. Install dependencies
 npm install
 
-# 3. Start Next.js development server
+# 3. Start the Next.js development server
 npm run dev
 
-# The dashboard will be live at http://localhost:3000
+# The dashboard runs at http://localhost:3000
 ```
-
----
-
-## 🔑 Demo Access
-
-| Account Role | Email Address | Password |
-|---|---|---|
-| **System Administrator** | `admin@admin.com` | `admin` |
 
 ---
 
@@ -201,7 +172,5 @@ npm run dev
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live%20Now-6366F1?style=for-the-badge)](https://fady519.github.io/Portfolio-Fady/)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,50:8B5CF6,100:A855F7&height=100&section=footer" width="100%"/>
-
-**⭐ If this dashboard inspired you, drop a star on GitHub — it means a lot!**
 
 </div>

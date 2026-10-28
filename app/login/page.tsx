@@ -5,6 +5,10 @@ import { useRouter } from "next/navigation";
 import { LogIn, Mail, Lock } from "lucide-react";
 import toast from "react-hot-toast";
 
+// Demo account so visitors can look around without registering first
+const DEMO_EMAIL = "admin@admin.com";
+const DEMO_PASSWORD = "admin";
+
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -22,7 +26,9 @@ const handleSubmit = (e: React.FormEvent) => {
   const savedPassword = localStorage.getItem("registeredPassword");
 
   
-  if (email !== savedEmail || password !== savedPassword) {
+  const isDemo = email === DEMO_EMAIL && password === DEMO_PASSWORD;
+
+  if (!isDemo && (email !== savedEmail || password !== savedPassword)) {
     toast.error("Invalid email or password! Please check your credentials.");
     return;
   }
@@ -67,6 +73,17 @@ const handleSubmit = (e: React.FormEvent) => {
           
           <button type="submit" className="w-full py-3 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold shadow-md shadow-indigo-500/10 transition-colors mt-6">
             Sign In
+          </button>
+
+          <button
+            type="button"
+            onClick={() => {
+              setEmail(DEMO_EMAIL);
+              setPassword(DEMO_PASSWORD);
+            }}
+            className="w-full py-2.5 px-4 rounded-xl border border-slate-200 dark:border-slate-800 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+          >
+            Use demo account ({DEMO_EMAIL} / {DEMO_PASSWORD})
           </button>
         </form>
         
